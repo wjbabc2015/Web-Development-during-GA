@@ -9,7 +9,7 @@ $(document).ready(function(){
 	});
 
 	$("#back").click(function(){
-		window.location = "../PHP/index_eadmin.php";
+		window.location = "../PHP/index.php";
 	});
 
 	$('#reset').click(function(){
@@ -35,7 +35,7 @@ function show_all_record () {
         }
     };
 
-    var url1 = "display_award_helper.php?tag=all";
+    var url1 = "display_helper.php?tag=all";
 
     displayRequest.open("GET",url1,true);
     displayRequest.send();
@@ -64,7 +64,7 @@ function show_detail(id, project) {
         }
     };
 
-    var url1 = "display_award_helper.php?tag=detail&id="+id+"&project="+project;
+    var url1 = "display_helper.php?tag=detail&id="+id+"&project="+project;
 
     displayRequest.open("GET",url1,true);
     displayRequest.send();
@@ -74,7 +74,7 @@ function delete_record (year, tag, host) {
 
 	if (confirm("Do you want to DELETE this Partner Information?")){
 
-		window.location = "../PHP/delete_award_record.php?year="+year+"&tag="+tag+"&host="+host+"&logo=all";
+		window.location = "../PHP/delete_record.php?year="+year+"&tag="+tag+"&host="+host+"&logo=all";
 
 	}
 }
@@ -122,17 +122,17 @@ function search_by_condition (condition) {
     var url = "";
  
     if (condition[0] != ""){
-    	url = "display_award_helper.php?tag=year&condition="+condition[0];
+    	url = "display_helper.php?tag=year&condition="+condition[0];
     }else if (condition[1] != ""){
-    	url = "display_award_helper.php?tag=general&condition="+condition[1];
+    	url = "display_helper.php?tag=general&condition="+condition[1];
     }else if (condition[2] != ""){
-    	url = "display_award_helper.php?tag=other&condition="+condition[2];
+    	url = "display_helper.php?tag=other&condition="+condition[2];
     }else if (condition[3] != "") {
-		url = "display_award_helper.php?tag=partner&condition="+condition[3];
+		url = "display_helper.php?tag=partner&condition="+condition[3];
 	}else if (condition[4] !="" ){
-		url = "display_award_helper.php?tag=teacher&condition="+condition[4];
+		url = "display_helper.php?tag=teacher&condition="+condition[4];
 	}else if (condition[5] !="" ){
-		url = "display_award_helper.php?tag=tech&condition="+condition[5];
+		url = "display_helper.php?tag=tech&condition="+condition[5];
 	}
 
 	displayRequest.open("GET", url, true);
@@ -142,35 +142,35 @@ function search_by_condition (condition) {
 function delete_teacher (id, name){
 	if (confirm("Do you want to DELETE this Partner Information?")){		
 
-		window.location = "../PHP/delete_award_record.php?logo=teacher&id="+id+"&name="+name;
+		window.location = "../PHP/delete_record.php?logo=teacher&id="+id+"&name="+name;
 	}
 }
 
 function delete_tech (id, name){
 	if (confirm("Do you want to DELETE this Partner Information?")){		
 
-		window.location = "../PHP/delete_award_record.php?logo=tech&id="+id+"&name="+name;
+		window.location = "../PHP/delete_record.php?logo=tech&id="+id+"&name="+name;
 	}
 }
 
 function delete_project(id, name){
 	if (confirm("Do you want to DELETE this Partner Information?")){		
 
-		window.location = "../PHP/delete_award_record.php?logo=project&id="+id+"&name="+name;
+		window.location = "../PHP/delete_record.php?logo=project&id="+id+"&name="+name;
 	}
 }
 
 function delete_person(id, name){
 	if (confirm("Do you want to DELETE this Partner Information?")){		
 
-		window.location = "../PHP/delete_award_record.php?logo=person&id="+id+"&name="+name;
+		window.location = "../PHP/delete_record.php?logo=person&id="+id+"&name="+name;
 	}
 }
 
 function delete_institution(id, name){
 	if (confirm("Do you want to DELETE this Partner Information?")){		
 
-		window.location = "../PHP/delete_award_record.php?logo=institution&id="+id+"&name="+name;
+		window.location = "../PHP/delete_record.php?logo=institution&id="+id+"&name="+name;
 	}
 }
 
