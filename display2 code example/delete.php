@@ -5,7 +5,6 @@
 <?php
 $logo = $_GET['logo'];
 
-
 	if ($logo == "all") {
 		$year = $_GET['year'];
 		$tag = $_GET['tag'];
@@ -36,7 +35,7 @@ $logo = $_GET['logo'];
 
 		if ($delete_result){
 			echo '<script type = "text/javascript">alert("Successfully Delete a GPE Conference Record!");
-												window.location = "../PHP/displayaward.php";
+												window.location = "../PHP/display.php";
 												</script>';
 		}else {
 			$error = mysqli_sqlstate($mysqlconn);
@@ -56,7 +55,7 @@ $logo = $_GET['logo'];
 
 		if ($delete_result){
 			echo '<script type = "text/javascript">alert("Successfully Delete a Institution Record!");
-												window.location = "../PHP/displayaward.php";
+												window.location = "../PHP/display.php";
 												</script>';
 		}else {
 			$error = mysqli_sqlstate($mysqlconn);
@@ -77,7 +76,7 @@ $logo = $_GET['logo'];
 
 		if ($delete_result){
 			echo '<script type = "text/javascript">alert("Successfully Delete a Teacher Record!");
-												window.location = "../PHP/displayaward.php";
+												window.location = "../PHP/display.php";
 												</script>';
 		}else {
 			$error = mysqli_sqlstate($mysqlconn);
@@ -98,7 +97,7 @@ $logo = $_GET['logo'];
 
 		if ($delete_result){
 			echo '<script type = "text/javascript">alert("Successfully Delete a Tech Record!");
-												window.location = "../PHP/displayaward.php";
+												window.location = "../PHP/display.php";
 												</script>';
 		}else {
 			$error = mysqli_sqlstate($mysqlconn);
@@ -119,7 +118,7 @@ $logo = $_GET['logo'];
 
 		if ($delete_result){
 			echo '<script type = "text/javascript">alert("Successfully Delete a Project Record in Other Award!");
-												window.location = "../PHP/displayaward.php";
+												window.location = "../PHP/display.php";
 												</script>';
 		}else {
 			$error = mysqli_sqlstate($mysqlconn);
@@ -140,7 +139,7 @@ $logo = $_GET['logo'];
 
 		if ($delete_result){
 			echo '<script type = "text/javascript">alert("Successfully Delete a Personnel Record in Other Award!");
-												window.location = "../PHP/displayaward.php";
+												window.location = "../PHP/display.php";
 												</script>';
 		}else {
 			$error = mysqli_sqlstate($mysqlconn);

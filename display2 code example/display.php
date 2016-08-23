@@ -6,9 +6,9 @@
 <head>
 	<title>GPE Award Search</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="../CSS/displayaward.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/display.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/showaward.js"></script>
+	<script type="text/javascript" src="../js/show.js"></script>
 </head>
 <body>
 	<header>
@@ -17,7 +17,7 @@
 	</header>
 
 	<section>
-		<form action="displayaward.php" method="post">
+		<form action="display.php" method="post">
 			<h1>GPE Award Search</h1>
 			<div id="search_condition">
 				<h2>Search Option:</h2>
@@ -172,7 +172,7 @@
 
 	<footer>
 		<br>
-			Copyright@ Global Academic Initiatives, maintained by Jiabin (Jeremy) Wang
+			Copyright@, maintained by Jiabin (Jeremy) Wang
 	</footer>
 </body>
 </html>

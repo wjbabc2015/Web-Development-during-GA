@@ -7,7 +7,7 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../CSS/insert.css">
 <script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/insertpersonnel.js"></script>
+<script type="text/javascript" src="../js/insert.js"></script>
 <title>Welcome to GA Initiatives</title>
 </head>
 <body>
@@ -136,7 +136,7 @@ if ($_POST){
 			echo '<script type = "text/javascript">alert("Please correct your email address!");</script>';
 		}
 
-		echo "<script>window.location ='../PHP/insertpersonnel.php?index=2';</script>";
+		echo "<script>window.location ='../PHP/insert.php?index=2';</script>";
 		
 	}
 
@@ -174,7 +174,7 @@ if ($_POST){
 		}else {
 			echo '<script type = "text/javascript">alert("Please correct your email address!");</script>';
 		}
-		echo "<script>window.location ='../PHP/insertpersonnel.php?index=3';</script>";
+		echo "<script>window.location ='../PHP/insert.php?index=3';</script>";
 	} 
 	
 }
@@ -220,7 +220,7 @@ if ($_POST){
 					<span class='error'>* required field.</span>
 				
 				
-				<form method='post' action='insertpersonnel.php'>
+				<form method='post' action='insert.php'>
 					<div id='university'>
 						<p class='form_head'>Institution of Personnel</p>
 						<p>
@@ -637,7 +637,7 @@ if ($_POST){
 
     <footer>
 		<br>
-			Copyright@ Global Academic Initiatives, maintained by Jiabin (Jeremy) Wang
+			Copyright@ , maintained by Jiabin (Jeremy) Wang
 	</footer>	
 </body>
 </html>

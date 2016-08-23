@@ -10,26 +10,26 @@ function backButton (){
 
 function updateButton (index){
 
-		window.location = '../PHP/updatepersonnel.php?index='+index;
+		window.location = '../PHP/update.php?index='+index;
 }
 
 function deleteButton (index){
 	if (confirm("Do you want to DELETE this Partner Personnel Information?")){
 		
-			window.location = '../PHP/delete_personnel.php?index='+index;
+			window.location = '../PHP/delete_.php?index='+index;
 			//alert("Successfully Delete!");
 	}
 }
 
 function updateButton_nonecu (index){
 
-		window.location = '../PHP/updatepersonnel_nonecu.php?index='+index;
+		window.location = '../PHP/update.php?index='+index;
 }
 
 function deleteButton_nonecu (index){
 	if (confirm("Do you want to DELETE this Partner Personnel Information?")){
 		
-			window.location = '../PHP/delete_personnel_nonecu.php?index='+index;
+			window.location = '../PHP/delete_.php?index='+index;
 			//alert("Successfully Delete!");
 	}
 }

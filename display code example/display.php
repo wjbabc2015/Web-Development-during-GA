@@ -25,7 +25,7 @@ if ($_POST && $_POST ['back']){
 }
 
 $total = 0;
-$mysql_count_statement = "select count(*) as total from ppersonnel";
+$mysql_count_statement = "select count(*) as total from table";
 
 $count_result = mysqli_query($mysqlconn, $mysql_count_statement);
 
@@ -117,58 +117,7 @@ $count_result = mysqli_query($mysqlconn, $mysql_count_statement);
 						<td width="11%">Academic Interests</td>
 						<td width="5%">Detail Info</td>
 					</tr>
-	<?php
-	include "partner_dis_help.php";
-	$searchHelp = new displayResult();
 
-	$count = 0;
-
-	$admin_condition = 0;
-	$padmin_condition = 0;
-	$coord_condition = 0;
-	$teacher_condition = 0;
-	$tech_condition = 0;
-
-	if ($_SERVER ["REQUEST_METHOD"] == "POST" && $_POST ['search']) {
-		
-		while ($number = mysqli_fetch_array($count_result)){
-			$total = $number['total'];
-		}
-		
-		//Initialize role variable
-		if ($_POST ['radmin'] )
-			$admin_condition = 1;
-		
-		if ($_POST ['rcoordinator'] )
-			$coord_condition = 1;
-		
-		if ($_POST ['rteacher'])
-			$teacher_condition = 1;
-		
-		if ($_POST ['rtech'])
-			$tech_condition = 1;
-		
-		if ($_POST['rpadmin'])
-			$padmin_condition = 1;
-
-	//echo $admin_condition;
-	//echo $padmin_condition;
-	//echo $coord_condition;
-	//echo $teacher_condition;
-	//echo $tech_condition;
-		
-		$condition_array = array($admin_condition, $padmin_condition, $coord_condition, $teacher_condition, $tech_condition);
-		
-		if (!empty ( $_POST ['shortname'] )){
-			$count = $searchHelp->searchPersonnel(1, "partner.sname", $_POST ['shortname'], $condition_array, $mysqlconn);
-		}else if (!empty($_POST['country'])){
-			$count = $searchHelp->searchPersonnel(1, "country", $_POST ['country'], $condition_array, $mysqlconn);
-		}else {
-			$count = $searchHelp->searchPersonnel(0, null, null, $condition_array, $mysqlconn);
-		}
-	}
-
-	?>
 	</table>
 	</fieldset>
 	<?php 

@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" type="text/css" href="../CSS/insert.css">
 		<script type="text/javascript" src="../js/jquery.js"></script>
-		<script type="text/javascript" src="../js/updatepersonnel.js"></script>
+		<script type="text/javascript" src="../js/update.js"></script>
 		<title>Update Partner Personnel Information</title>
 	</head>
 	
@@ -65,7 +65,7 @@
 	
 	if ($_POST){
 		if ($_POST['back']){
-			header('Location:displaypersonnel.php');
+			header('Location:display.php');
 		}
 		
 		if ($_POST['submit']){
@@ -174,7 +174,7 @@
 		//Display the result both from sucess and error
 		if ($insert_result){
 			echo '<script type = "text/javascript">alert("Successfully Update Personnel!");
-										window.location = "../PHP/displaypersonnel.php";
+										window.location = "../PHP/display.php";
 										</script>';
 		}else {
 			//$error = mysqli_error($mysqlconn);
@@ -475,7 +475,7 @@
 
 	<footer>
 		<br>
-			Copyright@ Global Academic Initiatives, maintained by Jiabin (Jeremy) Wang
+			Copyright@, maintained by Jiabin (Jeremy) Wang
 	</footer>		
 	</body>
 </html>

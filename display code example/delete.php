@@ -5,13 +5,13 @@
 <?php
 $f = $_GET['index'];
 
-$mysql_statement = "DELETE FROM ppersonnel where ID='".$f."'";
+$mysql_statement = "DELETE FROM table where ID='".$f."'";
 
 $result = mysqli_query($mysqlconn, $mysql_statement);
 
 if ($result){
 	echo '<script type = "text/javascript">alert("Successfully Delete Personnel!");
-										window.location = "../PHP/displaypersonnel.php";
+										window.location = "../PHP/display.php";
 										</script>';
 	}else {
 		//$error = mysqli_error($mysqlconn);

@@ -17,7 +17,7 @@ if ($_GET){
 		$s = $_GET['s'];
 //echo $_GET['s'];
 
-		$sql="SELECT * FROM partner WHERE sname = '".$s."'";
+		$sql="SELECT * FROM table WHERE sname = '".$s."'";
 		$result = mysqli_query($mysqlconn,$sql);
 		
 		while($row = mysqli_fetch_array($result)) {
@@ -50,7 +50,7 @@ if ($_GET){
 	if ($_GET['f']){
 		$f = $_GET['f'];
 //echo $_GET['f'];
-		$sql="SELECT * FROM ppersonnel WHERE ID = '".$f."'";
+		$sql="SELECT * FROM table WHERE ID = '".$f."'";
 		$result = mysqli_query($mysqlconn,$sql);
 		
 		while($row = mysqli_fetch_array($result)) {

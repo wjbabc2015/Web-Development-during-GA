@@ -465,7 +465,7 @@ function disappear(id) {
 }
 
 function backToIndex (){
-	window.location="../PHP/index_eadmin.php";
+	window.location="../PHP/index.php";
 }
 /*
 var email_field = document.getElementsByClassName('email_text');
