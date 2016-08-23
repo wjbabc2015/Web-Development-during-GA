@@ -1,0 +1,266 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	background: #FEC923;
+}
+
+header
+{
+	position: absolute;
+	width: 100%;
+	height: 130px;
+	top: 0;
+	text-align: left;
+	color: #FEC923;
+	background: #592A8A;
+}
+
+#menu_bar
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 140px;
+	padding-top: 10px;
+	text-align: left;
+	background: #592A8A;
+}
+
+.menu_bar_table
+{
+	width: 100%;
+	text-align: center;
+}
+
+section
+{
+	position: absolute;
+	top: 180px;
+	height: 1000px;
+	width: 99.2%;
+	padding: 5px;
+	background: #592A8A;
+}
+
+#partner_form
+{
+	visibility: visible;
+	display: block;
+}
+
+#nongu_partner_form
+{
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+	color: #FEC923;
+	visibility: hidden;
+	display: none;
+}
+
+#coad_partner_form
+{
+	text-align: center;
+	width: 40%;
+	margin-left: 30%;
+	color: #FEC923;
+	visibility: hidden;
+	display: none;
+}
+
+.nongu_partner_form_table
+{
+	width: 100%;
+}
+
+.nongu_partner_form_table tr
+{
+	height: 30px;
+}
+
+.nongu_partner_form_table td
+{
+	border: solid 1px white;
+	padding: 5px;
+}
+
+.nongu_select, .coad_select
+{
+	width: 150px;
+}
+
+footer
+{
+	background-color:#592A8A;
+	color: white;
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    height: 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.divided
+{
+	height: 20px;
+}
+
+#verification{
+	text-align: left;
+}
+#verification a{
+	text-align: center;
+}
+
+#partner_form #main_form {
+	width: 995px;
+	padding: 0px;
+	margin: 0px auto;
+	font-family: helvetica;
+	position: relative;
+}
+#partner_form h2
+{
+	color: #FEC923;
+}
+#partner_form #main_form .error {
+	color: #FF0000;
+}
+#partner_form #main_form .baricon {
+	display: inline-block;
+	border-radius: 100%;
+	padding: 12px;
+	background-color: #FEC923;
+	color: white;
+}
+#partner_form #main_form .progress_bar {
+	width: 200px;
+	height: 5px;
+	border-radius: 20px;
+	background-color: #D8D8D8;
+	display: inline-block;
+}
+#partner_form #main_form .process {
+	width: 100px;
+	height: 5px;
+	border-radius: 20px;
+	background-color: #D8D8D8;
+	display: inline-block;
+}
+#partner_form #main_form form div {
+	margin-left: 250px;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 500px;
+	margin-top: 50px;
+	background-color: #FEC923;
+}
+#partner_form #main_form form div table {
+	width: 100%;
+	text-align: center;
+}
+#partner_form #main_form form div .separate {
+	height: 20px;
+}
+
+#partner_form #main_form form div p {
+	color: #592A8A;
+	margin: 0px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+#partner_form #main_form form div .email_set{
+	margin-left: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 500px;
+	margin-top: 50px;
+	background-color: #FEC923;
+}
+#partner_form #main_form form div .form_head {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	text-align:center;
+}
+#partner_form #main_form form div input[type="text"] {
+	height: 30px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+}
+
+#partner_form #main_form form div select{
+	height: 30px;
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 10px;
+}
+#partner_form #main_form form div input[type="button"], input[type="submit"] {
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	border: 2px solid white;
+	background: none;
+	color: white;
+	margin: 5px;
+	margin-top: 10px;
+	color: #592A8A;
+}
+
+#menu_bar input[type="button"]
+{
+	width: 150px;
+	height:20px;
+	border:none;
+   	border-radius:20px;
+   	color:#592A8A;
+   	background-color:#FEC923;
+  	font-size:10px;
+}
+
+#nongu_partner_form input[type="submit"]
+{
+	width: 200px;
+	height:40px;
+	border:none;
+   	border-radius:3px;
+   	color:#592A8A;
+   	background-color:#FEC923;
+  	font-size:20px;
+}
+
+#coad_partner_form input[type="submit"]
+{
+	width: 200px;
+	height:40px;
+	border:none;
+   	border-radius:3px;
+   	color:#592A8A;
+   	background-color:#FEC923;
+  	font-size:20px;
+}
+
+
+#partner_form #main_form .checkbox {
+	margin: 15px;
+	text-align: left;
+}
+
+#partner_form #main_form .field_line{
+	border:2px solid #592A8A;
+}
+#partner_form #main_form .verify{
+	text-align: left;
+	color:#592A8A;
+}
+#partner_details1, #partner_details2, #verification, #general_info, #contact_info, #role_ident, #additional_info {
+	display: none;
+}
+#role_ident .admin_text, .padmin_text {
+	display:none;
+}
