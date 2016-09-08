@@ -1,5 +1,5 @@
 # Web-Development-in-GA
-  hawk.aos.ecu.edu
+  hawk.aos.ecu.edu\n
 •	Develop a database driven website in PHP 5.3 running on MySQL to manage partnership
 •	Create table, and maintain tables in MySQL based on requirements
 •	Develop a web-based functionality which generates dynamic data from MySQL database based on user’s preference by using AJAX
